@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .home-page {
+    @apply bg-[url('../public/assets/images/bg/bg-home.webp')] after:absolute after:inset-0 after:pointer-events-none after:bg-black/70 after:z-[-1];
+  }
+
+  .active-link {
+    @apply text-blue-500;
+  }
+}
+
+@layer utilities {
+  .d-container {
+    @apply container px-4 md:px-8 m-auto;
+  }
+
+  .d-section {
+    @apply py-4 md:py-8;
+  }
+}

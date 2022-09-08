@@ -41,7 +41,7 @@ export default function DefaultLayout({ children }) {
 
       <main className="d-container d-section">{children}</main>
 
-      <footer className="d-container d-section"></footer>
+      {/* <footer className="d-container d-section"></footer> */}
     </>
   );
 }
